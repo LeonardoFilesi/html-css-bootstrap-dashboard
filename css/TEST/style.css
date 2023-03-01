@@ -4,5 +4,77 @@
     padding: 0;
     box-sizing: border-box;
     outline: 1px solid red;
-    background-color: aqua;
+}
+
+.flex {
+    display: flex;
+}
+
+img {
+    width: 100%;
+}
+
+/* COLORS */
+
+.bg-content {
+    background-color: #f7f8f9;
+}
+
+.bg-navbar {
+    background-color: #e4e4e4;
+}
+
+.bg-sidebar {
+    background-color: #051d33;
+}
+
+/* ASSETS */
+
+.sidebar {
+    height: 100vh;
+    width: 150px;
+}
+
+.content {
+    position: absolute;
+    top: 73px;
+    left: 150px;
+    height: 100vh;
+    width: calc(100% - 150px);
+    
+}
+
+.done {
+    padding: 3px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+}
+
+.process {
+    padding: 3px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+}
+
+.failed {
+    padding: 3px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+.first-list-element {
+    height: 30px;
+}
+
+.list-element {
+    height: 30px;
+    padding: 0 15px;
+}
+
+.last-list-element {
+    height: 30px;
+    padding: 0 15px;
 }
