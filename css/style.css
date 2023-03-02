@@ -85,18 +85,13 @@ img {
     text-align: center;
 }
 
-.navbar {
-   
-}
-
-.content-header {
-
-}
-
+/*****************************************************
+SOLUZIONE RESPONSIVE
+******************************************************/
 @media  screen and (min-width: 992px) {
     
     .sidebar {
-        width: 300px;
+        width: 200px;
     }
 
     .desktop-none {

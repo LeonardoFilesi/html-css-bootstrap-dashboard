@@ -42,9 +42,10 @@
     </header>
 
     <main>
+        <!-- ALL CONTENT -->
         <div class="flex bg-content">
-            <!-- SIDEBAR -->
 
+            <!-- SIDEBAR -->
             <section class="sidebar text-white flex-column d-flex p-3 bg-sidebar">
                 
                 <ul class="nav nav-pills flex-column mb-auto white">
@@ -82,10 +83,12 @@
 
 
             <!-- CENTRAL CONTENT -->
-            <div class="">
+            <div class="container">
+                <!-- ROW CONTAINER OF ALL -->
                 <div class="row overflow-y-auto">
 
                     <!-- CONTENT HEADER -->
+                    <div class="container">
                         <div class="row bg-primary white p-3">
 
                             <div class="col-12 col-md-4 col-lg-6">
@@ -112,9 +115,15 @@
                                 <div class="i-rounded-square"><i class="fa-solid fa-trash-can"></i></div>
                             </div>
                         </div>
+                    </div>
+                    <!-- END CONTENT HEADER -->
 
-                        <!-- COLUMNS -->
+
+                    <!-- COLUMNS -->
+                    <div class="container">
                         <div class="row p-3 g-3">
+
+                            <!-- COLUMN 1 -->
                             <div class="col-12 col-lg-7 p-3">
 
                                 <!-- CARD 1 -->
@@ -221,10 +230,9 @@
                                                 <div class="col-3 col-md-2 col-lg-2">sapone</div>
                                             </div>
                                         </li>
-
                                     </ul>
-
                                 </div>
+                                <!-- END CARD 1 -->
 
                                 <!-- CARD 2 -->
                                 <div class="card">
@@ -263,56 +271,63 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <!-- END CARD 2 --> 
+                            </div>
+                            <!-- END COLUMN 1 -->
+
+                            <!-- COLUMN 2 -->
+                            <div class="col-12 col-lg-5 p-3 g-3">
+
+                                <!-- CARD 3 -->
+                                <div class="card">
+                                    <img src="img/stats.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Utenti attivi</h5>
+                                    <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item">Marzo: 1500</li>
+                                    </ul>
+                                    <div class="card-body">
+                                    <a href="#" class="card-link">Visualizza report approfondito</a>
+                                    </div>
+                                </div>
+
+                                <!-- CARD 4 -->
+                                <div class="card">
+                                    <div class="card-header">
+                                    <h3>TO DO</h3>
+                                    </div>
+                                    <ul class="list-group list-group-flush p-3">
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>                            
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>                            
+                                        </li>
+                                    </ul>
                                 </div> 
                             </div>
-                       
-
-                        <div class="col-12 col-lg-5 p-3 g-3">
-
-                            <!-- CARD 3 -->
-                            <div class="card">
-                                <img src="img/stats.jpeg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                <h5 class="card-title">Utenti attivi</h5>
-                                <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
-                                </div>
-                                <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Gennaio: 1200</li>
-                                <li class="list-group-item">Febbraio: 800</li>
-                                <li class="list-group-item">Marzo: 1500</li>
-                                </ul>
-                                <div class="card-body">
-                                <a href="#" class="card-link">Visualizza report approfondito</a>
-                                </div>
-                            </div>
-
-                            <!-- CARD 4 -->
-                            <div class="card">
-                                <div class="card-header">
-                                <h3>TO DO</h3>
-                                </div>
-                                <ul class="list-group list-group-flush p-3">
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
-                                        <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
-                                        <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>                            
-                                    </li>
-                                    <li class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
-                                        <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>                            
-                                    </li>
-                                </ul>
-                            </div> 
+                             <!-- END COLUMN 2 -->
                         </div>
+                    
                     </div>
+                    <!-- END COLUMNS -->
                 </div>
-            
+                <!-- END OF ROW CONTAINER OF ALL -->
             </div>
+            <!-- END CENTRAL CONTAINER -->
         </div>
-
+        <!-- END ALL CONTENT -->
     </main>
 
     <!-- DENTRO CARTELLA CSS C'E' IL FILE TEST -->
