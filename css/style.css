@@ -42,11 +42,47 @@ img {
     color: white;
 }
 
+.yellow {
+    color: orange;
+}
+
+.grey {
+    color: grey;
+}
+
 /* ASSETS */
 
 .sidebar {
     height: 100vh;
     width: 90px;
+}
+
+.rounded-bg {
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+    margin: 0 auto;
+}
+
+
+.img-square {
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+}
+
+.img-controlled {
+    height: 2rem;
+}
+
+.img-rounded-square {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid gray;
+    color: gray;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .navbar {
@@ -60,9 +96,20 @@ img {
 @media  screen and (min-width: 992px) {
     
     .sidebar {
-        width: 230px;
+        width: 300px;
     }
 
+    .desktop-none {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    .tablet-none {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {

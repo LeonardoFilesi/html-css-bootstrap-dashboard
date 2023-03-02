@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- BT - JS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
     <title>Dashboard</title>
 </head>
 <body>
@@ -17,215 +19,298 @@
         <nav class="navbar bg-content p-3">
             <div class="container-fluid">
                 <div class="col-auto">
-                    Logo
+                    <div class="img-square desktop-none"><img src="img/mobile-logo.png" alt=""></div>
+                    <div class="img-controlled tablet-none"><img src="img/logo.svg" alt=""></div>
                 </div>
+
                 <div class="col">
-                    Search
+                    <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                      </div>
                 </div>
-                <div class="col-auto">
-                    Actions
+
+                <div class="col-auto flex">
+                    <div class="tablet-none img-square"><i class="fa-solid fa-list-ul"></i></div>
+                    <div class="tablet-none img-square"><i class="fa-solid fa-circle-question"></i></div>
+                    <div class="tablet-none img-square"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <div class="img-square yellow"><i class="fa-solid fa-bell"></i></div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="flex bg-content">
-        
-        <!-- SIDEBAR -->
+    <main>
+        <div class="flex bg-content">
+            <!-- SIDEBAR -->
 
-        <section class="sidebar text-white flex-column d-flex p-3 bg-sidebar">
-            <ul class="nav nav-pills flex-column mb-auto white">
-                <li class="nav-item">
-                    <i class="fa-solid fa-house"></i>
-                </li>
-                <li class="nav-item">
-                    <i class="fa-solid fa-chart-simple"></i>
-                </li>
-                <li class="nav-item">
-                    <i class="fa-solid fa-signal"></i>
-                </li>
-            </ul>
+            <section class="sidebar text-white flex-column d-flex p-3 bg-sidebar">
+                
+                <ul class="nav nav-pills flex-column mb-auto white">
+                    <li class="nav-item flex">
+                        <div class="img-square">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="tablet-none">Home</div>
+                    </li>
+                    <li class="nav-item flex">
+                        <div class="img-square">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                        <div class="tablet-none">Stats</div>
+                    </li>
+                    <li class="nav-item flex">
+                        <div class="img-square">
+                            <i class="fa-solid fa-signal"></i>
+                        </div>
+                        <div class="tablet-none">Signals</div>
+                    </li>
+                </ul>
 
-            <div class="dropdown white">
-                <div>
-                    <i class="fa-solid fa-gear"></i>
+                <div class="dropdown white">
+                    <div class="flex">
+                        <div class="img-square white">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                        <div class="tablet-none">Admin</div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- END SIDEBAR -->
+            <!-- END SIDEBAR -->
 
-        <div class="content flex wrap overflow-y-auto">
 
+            <!-- CENTRAL CONTENT -->
+            <div class="">
+                <div class="row overflow-y-auto">
+
+                    <!-- CONTENT HEADER -->
+                        <div class="row bg-primary white p-3">
+
+                            <div class="col-12 col-md-4 col-lg-6">
+                                <div class="flex">
+                                    <h3>Boolean</h3> <p class="rounded-bg">Piano blaze</p>
+                                </div>
+                                <div class="flex">
+                                    <p class="rounded-bg">Piano blaze</p>
+                                    <div class="img-square"><i class="fa-solid fa-angles-right white"></i></div>
+                                    <p class="rounded-bg desktop-none"><i class="fa-solid fa-plus"></i></p>
+                                    <p class="rounded-bg tablet-none">Boolean mobile app</p>
+                                    <p class="rounded-bg tablet-none">Boolean web app</p>
+                                    <p class="rounded-bg tablet-none">Boolean blog app</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <p>Studenti online negli ultimi 30 minuti</p>
+                                <h3>125</h3>
+                            </div>
+
+                            <div class="col-12 col-md-4 col-lg-3 flex">
+                                <div class="i-rounded-square"><i class="fa-solid fa-pencil"></i></div>
+                                <div class="i-rounded-square"><i class="fa-solid fa-trash-can"></i></div>
+                            </div>
+                        </div>
+
+                        <!-- COLUMNS -->
+                        <div class="row p-3 g-3">
+                            <div class="col-12 col-lg-7 p-3">
+
+                                <!-- CARD 1 -->
+                                <div class="card">
+
+                                    <div class="card-header">
+                                        <h3>Prossime classi</h3>
+                                    </div>
+
+                                    <ul class="list-group list-group-flush p-3">
+                                        <li class="list-group-item">
+                                            <div class="row flex">
+                                                <div class="col-6 col-md-4 col-lg-5">Nome</div>
+                                                <div class="mobile-none col-md-2 col-lg-2">Data inizio</div>
+                                                <div class="mobile-none col-md-2 col-lg-1">ROI</div>
+                                                <div class="col-3 col-md-2 col-lg-2">Stato</div>
+                                                <div class="col-3 col-md-2 col-lg-2">Azioni</div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="row flex">
+                                                <div class="col-6 col-md-4 col-lg-5 flex align-middle">
+                                                    <div class="img-square"><img src="img/class-avatar.jpg" alt=""></div>
+                                                    Classe 75
+                                                </div>
+                                                <div class="mobile-none col-md-2 col-lg-2">15 Feb 2021</div>
+                                                <div class="mobile-none col-md-2 col-lg-1">20%</div>
+                                                <div class="col-3 col-md-2 col-lg-2"><button type="button" class="btn btn-success">Done</button>
+                                                </div>
+                                                <div class="col-3 col-md-2 col-lg-2 flex">
+                                                    <div class="img-rounded-square"><i class="fa-solid fa-pencil"></i></div>
+                                                    <div class="img-rounded-square"><i class="fa-solid fa-trash-can"></i></div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="row flex">
+                                                <div class="col-6 col-md-4 col-lg-5">ciao</div>
+                                                <div class="mobile-none col-md-2 col-lg-2">capitano</div>
+                                                <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
+                                                <div class="col-3 col-md-2 col-lg-2">sono</div>
+                                                <div class="col-3 col-md-2 col-lg-2">sapone</div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="flex">
+                                                <div class="col-6 col-md-4 col-lg-5">ciao</div>
+                                                <div class="mobile-none col-md-2 col-lg-2">capitano</div>
+                                                <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
+                                                <div class="col-3 col-md-2 col-lg-2">sono</div>
+                                                <div class="col-3 col-md-2 col-lg-2">sapone</div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="flex">
+                                                <div class="col-6 col-md-4 col-lg-5">ciao</div>
+                                                <div class="mobile-none col-md-2 col-lg-2">capitano</div>
+                                                <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
+                                                <div class="col-3 col-md-2 col-lg-2">sono</div>
+                                                <div class="col-3 col-md-2 col-lg-2">sapone</div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="flex">
+                                                <div class="col-6 col-md-4 col-lg-5">ciao</div>
+                                                <div class="mobile-none col-md-2 col-lg-2">capitano</div>
+                                                <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
+                                                <div class="col-3 col-md-2 col-lg-2">sono</div>
+                                                <div class="col-3 col-md-2 col-lg-2">sapone</div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="flex">
+                                                <div class="col-6 col-md-4 col-lg-5">ciao</div>
+                                                <div class="mobile-none col-md-2 col-lg-2">capitano</div>
+                                                <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
+                                                <div class="col-3 col-md-2 col-lg-2">sono</div>
+                                                <div class="col-3 col-md-2 col-lg-2">sapone</div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="flex">
+                                                <div class="col-6 col-md-4 col-lg-5">ciao</div>
+                                                <div class="mobile-none col-md-2 col-lg-2">capitano</div>
+                                                <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
+                                                <div class="col-3 col-md-2 col-lg-2">sono</div>
+                                                <div class="col-3 col-md-2 col-lg-2">sapone</div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-group-item">
+                                            <div class="flex">
+                                                <div class="col-6 col-md-4 col-lg-5">ciao</div>
+                                                <div class="mobile-none col-md-2 col-lg-2">capitano</div>
+                                                <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
+                                                <div class="col-3 col-md-2 col-lg-2">sono</div>
+                                                <div class="col-3 col-md-2 col-lg-2">sapone</div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <!-- CARD 2 -->
+                                <div class="card">
+                                    <div class="card-header">
+                                    <h3>F.A.Q.</h3>
+                                    </div>
+                                    <div class="accordion accordion-flush p-3" id="accordionFlushExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                    Come aggiungere un nuovo studente?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Come posso usare questa dashboard da mobile?
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                       
+
+                        <div class="col-12 col-lg-5 p-3 g-3">
+
+                            <!-- CARD 3 -->
+                            <div class="card">
+                                <img src="img/stats.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Utenti attivi</h5>
+                                <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Gennaio: 1200</li>
+                                <li class="list-group-item">Febbraio: 800</li>
+                                <li class="list-group-item">Marzo: 1500</li>
+                                </ul>
+                                <div class="card-body">
+                                <a href="#" class="card-link">Visualizza report approfondito</a>
+                                </div>
+                            </div>
+
+                            <!-- CARD 4 -->
+                            <div class="card">
+                                <div class="card-header">
+                                <h3>TO DO</h3>
+                                </div>
+                                <ul class="list-group list-group-flush p-3">
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                                        <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+                                        <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>                            
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+                                        <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>                            
+                                    </li>
+                                </ul>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
             
-            <div class="content-header flex wrap p-3 bg-primary col-12">
-                <div class="col-12 col-md-4 col-lg-6">ciao</div>
-                <div class="col-12 col-md-4 col-lg-3">sono una</div>
-                <div class="col-12 col-md-4 col-lg-3">colonna</div>
             </div>
-
-                <div class="col-12 col-lg-7 p-3">
-
-                    <!-- CARD 1 -->
-                    <div class="card">
-                        <div class="card-header">
-                          <h3>Prossime classi</h3>
-                        </div>
-                        <ul class="list-group list-group-flush p-3">
-                            <li class="list-group-item">
-                                <div class="flex">
-                                    <div class="col-6 col-md-4 col-lg-5">Nome</div>
-                                    <div class="mobile-none col-md-2 col-lg-2">Data inizio</div>
-                                    <div class="mobile-none col-md-2 col-lg-1">ROI</div>
-                                    <div class="col-3 col-md-2 col-lg-2">Stato</div>
-                                    <div class="col-3 col-md-2 col-lg-2">Azioni</div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="flex">
-                                    <div class="col-6 col-md-4 col-lg-5 flex">ciao</div>
-                                    <div class="mobile-none col-md-2 col-lg-2">capitano</div>
-                                    <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sono</div>
-                                    <div class="col-3 col-md-2 col-lg-2 flex">sapone</div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="flex">
-                                    <div class="col-6 col-md-4 col-lg-5">ciao</div>
-                                    <div class="mobile-none col-md-2 col-lg-2">capitano</div>
-                                    <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sono</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sapone</div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="flex">
-                                    <div class="col-6 col-md-4 col-lg-5">ciao</div>
-                                    <div class="mobile-none col-md-2 col-lg-2">capitano</div>
-                                    <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sono</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sapone</div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="flex">
-                                    <div class="col-6 col-md-4 col-lg-5">ciao</div>
-                                    <div class="mobile-none col-md-2 col-lg-2">capitano</div>
-                                    <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sono</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sapone</div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="flex">
-                                    <div class="col-6 col-md-4 col-lg-5">ciao</div>
-                                    <div class="mobile-none col-md-2 col-lg-2">capitano</div>
-                                    <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sono</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sapone</div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="flex">
-                                    <div class="col-6 col-md-4 col-lg-5">ciao</div>
-                                    <div class="mobile-none col-md-2 col-lg-2">capitano</div>
-                                    <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sono</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sapone</div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="flex">
-                                    <div class="col-6 col-md-4 col-lg-5">ciao</div>
-                                    <div class="mobile-none col-md-2 col-lg-2">capitano</div>
-                                    <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sono</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sapone</div>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="flex">
-                                    <div class="col-6 col-md-4 col-lg-5">ciao</div>
-                                    <div class="mobile-none col-md-2 col-lg-2">capitano</div>
-                                    <div class="mobile-none col-md-2 col-lg-1">prezzo</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sono</div>
-                                    <div class="col-3 col-md-2 col-lg-2">sapone</div>
-                                </div>
-                            </li>
-                        </ul>
-                      </div>
-
-                    <!-- CARD 2 -->
-                    <div class="card">
-                        <div class="card-header">
-                          <h3>F.A.Q.</h3>
-                        </div>
-                        <div class="accordion accordion-flush p-3" id="accordionFlushExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        Come aggiungere un nuovo studente?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        Come posso accedere alle informazioni del mio account?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                        Come posso usare questa dashboard da mobile?
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-
-                </div>
-
-                <div class="col-12 col-lg-5 p-3">
-                    <!-- CARD 3 -->
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, veritatis culpa molestias dolorem perspiciatis illo voluptates, modi sapiente, quos ut rerum inventore odit quaerat impedit autem eum voluptate laboriosam dignissimos!
-                    <!-- CARD 4 -->
-                    <div class="card">
-                        <div class="card-header">
-                          <h3>TO DO</h3>
-                        </div>
-                        <ul class="list-group list-group-flush p-3">
-                            <li class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
-                                <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
-                            </li>
-                            <li class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
-                                <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>                            
-                            </li>
-                            <li class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
-                                <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>                            
-                            </li>
-                        </ul>
-                     </div> 
-                </div>
-
-
-
-           
-        
         </div>
 
     </main>
